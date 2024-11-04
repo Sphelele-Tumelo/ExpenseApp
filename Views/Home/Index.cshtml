@@ -1,0 +1,14 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    @*
+        this method below invoke the expenses method in the HomeControl,
+        when a user taps that button, it will call that method in the HomeControl(Expenses ViewModel)
+    *@
+  <a asp-controller = "Home" asp-action ="Expenses" class = "btn btn-primary">Overview</a>
+  <a asp-controller = "Home" asp-action ="CreateEditExpense" class = "btn btn-secondary">Create new</a>
+</div>
+
